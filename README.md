@@ -11,4 +11,4 @@ Se agregaran todos los archivos creados para el proyecto de Martha por esta red 
 
 ----------------------------------------------------
 
-21/02 - Se suben los archivos html, css e imagenes de la pagina. (Eder)
+21/02 - Se suben los archivos html, css e imagenes de la pagina, ademas se incluye documentacion (bitacora y diagrama de Gantt). [Eder]

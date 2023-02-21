@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
+
+/*Todo el documento html*/
+html,body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #2e034b;
+    background: url("../Imagenes/Fondo.svg") no-repeat center center/cover;
+    position: relative;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    color:white;
+    font-family: 'Playfair Display SC';
+    width: 100%;
+}
+
+body p {
+    line-height: 1.3rem;
+}
+
+/* Cabecera */
+.cabecera {
+    background-color: hsla(177, 67%, 46%, 0.73);
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+}
+
+.cabecera .nombre {
+    text-decoration: none;
+    font-size: 2.5rem;
+    display: flex;
+    font-weight: bold;
+    color: black;
+    text-shadow: rgba(33, 33, 33, 0.95) 0px 3px 3px;
+}
+
+.barra_nav {
+    width: 100%;
+}
+
+.cabecera .logo {
+    float: left;
+}
+
+.cabecera ul {
+    text-align: right;
+}
+
+.cabecera ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.cabecera ul li a{
+    text-decoration: none;
+    color: black;
+    padding: .5rem;
+    margin-left: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.cabecera ul li a:hover {
+    background-color: #3060cf;
+    color: whitesmoke;
+    border-radius: 30px;
+    transition: .8s;
+}
+
+@media (max-width: 480px) {
+    .cabecera {
+        width: 90%;
+        margin: 0 auto;
+}
+}
+
+/* Principal */
+#principal {
+    width: 60%;
+    padding: 2rem;
+    margin: 0 auto;
+
+}
+
+@media (max-width: 480px) {
+    #principal {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+/* Inicio */
+#inicio {
+    text-align: center;
+    margin-bottom: 15rem;
+}
+
+#inicio h1 {
+    font-weight: bold;
+    color:floralwhite;
+    font-size: 3.2rem;
+    text-shadow: 0px 0px 6px rgba(192, 60, 209, 0.7);
+    width: 100%;
+}
+
+#inicio h2 {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 1.8rem;
+}
+
+#inicio p {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+#inicio p a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#inicio img {
+    width: 100%;
+}
+
+/* Perfil */
+#perfil {
+    text-align: center;
+    margin-bottom: 15rem;
+}
+
+#perfil h1 {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+#perfil .p1, .p3 {
+    text-align: justify;
+}
+
+#perfil .p2 {
+    margin: 2rem 0;
+    color: #f33535;
+    font-weight: bold;
+}
+
+#perfil .lista p {
+    font-weight: bold;
+    color: #84e246;
+}
+
+#perfil img {
+    margin: 2rem 0;
+    width: 100%;
+}
+
+/* Servicios */
+#servicios {
+    text-align: center;
+    margin-bottom: 20rem;
+}
+
+#servicios h1 {
+    font-weight: bold;
+    font-size: 2rem;
+
+}
+
+#servicios h3 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: orange;
+    margin-top: 5rem;
+}
+
+#servicios img {
+    float: left;
+    border-radius: 10px;
+    border: 3px solid #bf0d0d;
+    width: 40%;
+    margin-right: 1rem;
+}
+
+#servicios p {
+    text-align: justify;
+}
+
+#servicios br {
+    clear: both;
+}
+
+@media (max-width: 480px) {
+    #servicios img {
+        float: none;
+        width: 100%;
+    }
+}
+
+/* Contacto */
+#contacto {
+    text-align: center;
+    margin-bottom: 15rem;
+}
+
+#contacto h1 {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+#contacto .p_contacto {
+    text-align: justify;
+}
+
+#contacto .p_miembro {
+    font-size: 1.2rem;
+}
+
+#contacto .foto {
+    border-radius: 10px;
+    border: 3px solid black;
+}
+
+#contacto h2 {
+    margin-top: 6rem;
+    color:#84e246;
+}
+
+#contacto a .link{
+    margin: .5rem;
+}
+
+#contacto .link:hover {
+    opacity: .3;
+    transition: 1s;
+}
+
+@media (max-width: 480px) {
+    #contacto .foto {
+        border-radius: 10px;
+        border: 3px solid black;
+        width: 100%;
+        height: 50%;
+    }
+
+    #contacto .link {
+        width: 25%;
+    }
+
+    #contacto h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Preguntas */
+#preguntas {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+#preguntas h1 {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+#preguntas h2 {
+    margin-top: 5rem;
+    color: orange;
+}
+
+#preguntas p {
+    text-align: justify;
+}
+
+/* Pie pagina */
+.pie_pagina {
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    display: block;
+    padding-top: 18px;
+    padding-bottom: 16px;
+}
+
+.pie_pagina p {
+    color: lightgray;
+}
+
+.pie_pagina a {
+    color:lightgray;
+    text-decoration: none;
+}
+
+.pie_pagina a:hover {
+    font-weight: bold;
+    color: white;
+}
+
+@media (max-width:480px) {
+    .pie_pagina {
+        margin: 0 auto;
+        width: 100%;
+    }
+}

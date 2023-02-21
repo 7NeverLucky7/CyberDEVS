@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+html body {
+    height: 100%;
+}
+
+body {
+    background-color: #2e034b;
+    color: black;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: #f089a0;
+    text-decoration: none;
+}
+
+/* Create */
+.cuerpo {
+    width: 100%;
+    max-width: 785px;
+    min-width: 320px;
+    border-radius: 15px;
+    background-color: #c4a4a4;
+    padding: 3rem;
+}
+
+/* Contenido */
+.contenido {
+    width: 65%;
+    margin: 3rem auto;
+}
+
+.contenido h1 {
+    font-size: 26px;
+    text-align: center;
+}
+
+.contenido p {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+}
+
+/* Formulario */
+.formulario {
+    margin-top: 2rem;
+}
+
+.formulario label {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: .3rem;
+}
+
+.formulario input {
+    display: block;
+    border: none;
+    width: 100%;
+}
+
+.formulario input:not([type="submit"]) {
+    background-color: transparent;
+    padding: 1.5rem;
+    border: 1px solid #020202;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.formulario input[type="submit"] {
+    border-radius: 5px;
+    background-color: #e3627f;
+    color: white;
+    font-weight: bold;
+    padding: 1.5rem 3rem;
+    cursor: pointer;
+}
+
+/* Legal */
+.legal {
+    width: 85%;
+    border-radius: 10px;
+    background-color: #202e4e;
+    padding: 2rem;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 24px;
+    color: #8f9ab2;
+    text-align: center;
+}

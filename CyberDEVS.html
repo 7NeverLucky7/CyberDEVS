@@ -6,20 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="Imagenes/Logo.svg">
     <link rel="stylesheet" href="CSS/Main.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <title>CyberDEVS</title>
 </head>
 <body>
 
     <!--CABECERA-->
-    <header class="cabecera">
+    <header class="cabecera" x-data="{ open: false}">
+        <div class="logo">
         <a href="#" class="nombre"><img class="logo" src="Imagenes/Logo.png" alt="Logotipo" width="64" height="64">CyberDEVS</a>
-        <nav class="barra_nav">
-            <ul>
-                <li><a href="Login.html">Entrar</a></li>
-                <li><a href="#perfil">Perfil</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-                <li><a href="#preguntas">Preguntas frecuentes</a></li>
+        </div>
+        <button class="boton_cabecera_abierto" x-on:click="open = true" type="button"><img src="Imagenes/Menu.svg" height ="35" width="35"/></button>
+        <nav class="barra_nav" x-bind:class="open ? 'nav--show' : ''">
+            <div class="boton_nav" x-on:click="open = false">
+                <button class="boton_cabecera_cerrado" type="button"><img src="Imagenes/Cerrar.svg" height ="35" width="35"/></button>
+            </div>
+            <ul class="ul_nav">
+                <li class="li_nav"><a href="Login.html" class="link_nav">Entrar</a></li>
+                <li class="li_nav"><a href="#perfil" class="link_nav">Perfil</a></li>
+                <li class="li_nav"><a href="#servicios" class="link_nav">Servicios</a></li>
+                <li class="li_nav"><a href="#contacto" class="link_nav">Contacto</a></li>
+                <li class="li_nav"><a href="#preguntas" class="link_nav">Preguntas frecuentes</a></li>
             </ul>
         </nav>
     </header>
@@ -35,8 +42,8 @@
             <p>
                 Te protegemos contra ciber-amenazas enfocándonos en estándares globales establecidos 
                 por la <a href="https://owasp.org/www-project-top-ten/" target="_blank">OWASP</a> 
-                (<b>Open Web Application Security Project</b>) y <a href="https://www.nist.gov/system/files/documents/2018/12/10/frameworkesmellrev_20181102mn_clean.pdf" target="_blank">NIST</a>
-                (<b>National Institute of Standards and Technology</b>) ofreciendo además servicios de inteligencia para tu empresa.
+                (Open Web Application Security Project) y <a href="https://www.nist.gov/system/files/documents/2018/12/10/frameworkesmellrev_20181102mn_clean.pdf" target="_blank">NIST</a>
+                (National Institute of Standards and Technology) ofreciendo además servicios de inteligencia para tu empresa.
             </p>
             <img class="img2" src="Imagenes/Ciberseguridad.gif" alt="CyberDEVS">
         </article>

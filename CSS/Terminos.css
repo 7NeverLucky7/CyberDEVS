@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Work+Sans:wght@500&display=swap');
+
+/* ---TODO EL DOCUMENTO--- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;  
+}
+
+body {
+    background: url("../Imagenes/Fondo.svg") no-repeat center center/cover;
+    position: relative;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    color:white;
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+}
+
+body p {
+    line-height: 1.3rem;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* ---CONTENIDO--- */
+.contenido {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.titulo {
+    font-weight: bold;
+    color:floralwhite;
+    font-size: 3.2rem;
+    text-shadow: 0px 0px 6px rgba(192, 60, 209, 0.7);
+    width: 100%;
+    margin-top: 80px;
+    text-transform: uppercase;
+}
+
+.subtitulos {
+    font-family: 'Work Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+p {
+    margin: 1.5rem auto;
+    text-align: justify;
+}
+
+.parrafo_final {
+    margin: 5rem auto;
+}
+
+
+/* ---PIE PAGINA--- */
+.footer {
+    background-color: black;
+    text-align: center;
+    padding: 1rem;
+    font-size: .9rem;
+}
+
+.regresar {
+    text-decoration: underline;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.footer p {
+    text-align: center;
+}
+
+
+/* ---DISEÑO RESPONSIVO CELULAR--- */
+@media (max-width: 499px) {
+    
+    /* ---CONTENIDO--- */
+    .contenido {
+        width: 90%;
+    }
+}
+
+
+/* ---DISEÑO RESPONSIVO TABLETA--- */
+@media (min-width: 500px) and (max-width: 949px) {
+    
+    /* ---CONTENIDO--- */
+    .contenido {
+        width: 80%;
+    }
+}

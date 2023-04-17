@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Work+Sans:wght@500&display=swap');
+
+/* ---TODO EL DOCUMENTO--- */
+html,body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("../Imagenes/Fondo.svg") no-repeat center center/cover;
+    position: relative;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    color:white;
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+}
+
+body p {
+    line-height: 1.3rem;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* ---FORMULARIO--- */
+.principal {
+    width: 35%;
+    margin: 50px auto;
+    padding: 5rem 1rem;
+    text-align: center;
+    background-color: hsla(177, 67%, 46%, 0.93);
+}
+
+.principal .titulo {
+    font-size: 2.7rem;
+    text-transform: uppercase;
+}
+
+.principal .parrafo {
+    font-size: 1.2rem;
+}
+
+.principal input {
+    border-radius: 5px;
+}
+
+.principal .entrar {
+    background-color: hsla(0, 100%, 49%, 0.79);
+    color: white;
+    font-weight: bold;
+    padding: .5rem 2rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.principal .mostrar_pass {
+    padding: 0;
+    background-color: hsla(177, 67%, 46%, 0);
+    border-color: hsla(177, 67%, 46%, 0);
+    cursor: pointer;
+    position: absolute;
+}
+
+.principal .mostrar_pass .img {
+    width: 100%;
+}
+
+
+/* ---REGRESO A PAGINA--- */
+.legal {
+    margin-top: 3rem;
+}
+
+.legal a {
+    text-decoration: none;
+    color: darkmagenta;
+}
+
+
+/* ---DISEÑO RESPONSIVO CELULAR--- */
+@media (max-width: 480px) {
+
+    /* ---FORMULARIO--- */
+    .principal {
+        width: 85%;
+    }
+}
+
+
+/* ---DISEÑO RESPONSIVO TABLETA--- */
+@media (min-width: 500px) and (max-width: 949px) {
+
+    /* ---FORMULARIO--- */
+    .principal {
+        width: 80%;
+    }
+}

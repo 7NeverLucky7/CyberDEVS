@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Work+Sans:wght@500&display=swap');
+
+/* TODO EL DOCUMENTO */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("../Imagenes/Fondo.svg") no-repeat center center/cover;
+    position: relative;
+    height: 100%;
+    left: 0;
+    top: 0;
+    color:white;
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+}
+
+
+/* HEADER */
+.encabezado {
+    background-color: hsla(177, 67%, 46%, 0.83);
+    padding: .8rem;
+}
+
+.titulo {
+    color:white;
+    font-size: 3.2rem;
+    text-shadow: 0px 0px 6px black;
+    text-align: center;
+    margin-top: 1rem;
+    text-transform: uppercase;
+}
+
+
+/* LINKS */
+.menu {
+    background-color: hsla(177, 67%, 46%, 0.83);
+    padding: 1.4rem;
+    text-align: center;
+}
+
+.link {
+    text-decoration: none;
+    margin: 0 3rem 0 3rem;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    padding: .2rem;
+}
+
+.link:hover {
+    background-color: hsla(188, 55%, 33%, 1);
+    color: whitesmoke;
+    border-radius: 30px;
+    transition: .5s;
+    font-weight: bold;
+}
+
+.boton_cabecera_abierto, .boton_nav {
+    display: none;
+}
+
+
+/* CONTENIDO */
+.contenedor {
+    width: 700px;
+    margin: 0 auto;
+    background-color: hsla(181, 26%, 63%, 0.9);
+}
+
+iframe {
+    width: 720px;
+    height: 997px;
+}
+
+
+/* ---PIE PAGINA--- */
+.footer {
+    background-color: black;
+    text-align: center;
+    padding: 1rem;
+    font-size: .9rem;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.footer p {
+    text-align: center;
+}
+
+
+/* ---DISEÑO RESPONSIVO CELULAR--- */
+@media (max-width: 499px) {
+    
+    /* LINKS */
+    .barra_nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: hsla(177, 67%, 46%, 0.83);
+        transform: translateX(-100vw);
+        transition: .5s;
+    }
+    
+    .boton_cabecera_abierto, .boton_nav {
+        display: block;
+        margin-right: 1rem;
+    }
+    
+    .boton_cabecera_abierto, .boton_cabecera_cerrado {
+        background-color: hsla(177, 67%, 46%, 0);
+        border-radius: 10px;
+        border-color: hsla(177, 67%, 46%, 0);
+    }
+    
+    .boton_cabecera_abierto img, .boton_cabecera_cerrado img {
+        filter: invert(10%);
+    }
+    
+    .nav--show {
+        transform: translateX(0);
+    }
+    
+    .boton_nav {
+        text-align: right;
+        margin: 1rem;
+    }
+    
+    .enlaces {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: block !important;
+    }
+    
+    .link {
+        display: block;
+        padding: 1rem;
+        font-size: 2rem !important;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        margin: 3rem 0;
+    }
+
+
+    /* CONTENIDO */
+    .contenedor {
+        width: 95%;
+    }
+    
+    iframe {
+        width: 100%;
+    }
+}
+
+
+/* ---DISEÑO RESPONSIVO TABLETA--- */
+@media (min-width: 500px) and (max-width: 949px) {
+    
+    /* LINKS */
+    .link {
+        padding: .2rem;
+        margin: 1rem;
+    }
+
+
+    /* CONTENIDO */
+    .contenedor {
+        width: 90%;
+    }
+    
+    iframe {
+        width: 95%;
+    }
+}

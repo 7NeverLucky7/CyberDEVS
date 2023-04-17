@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Imagenes/Radar.png">
+    <link rel="stylesheet" href="CSS/Main.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <title>CyberDEVS</title>
+</head>
+<body>
+
+    <!--CABECERA-->
+    <header class="cabecera" x-data="{ open: false}">
+        <div class="logo">
+        <a href="#" class="nombre"><img class="logo" src="Imagenes/Radar.png" alt="Logotipo" width="64" height="64">CyberDEVS</a>
+        </div>
+        <button class="boton_cabecera_abierto" x-on:click="open = true" type="button"><img src="Imagenes/Menu.svg" height ="35" width="35"/></button>
+        <nav class="barra_nav" x-bind:class="open ? 'nav--show' : ''">
+            <div class="boton_nav" x-on:click="open = false">
+                <button class="boton_cabecera_cerrado" type="button"><img src="Imagenes/Cerrar.svg" height ="35" width="35"/></button>
+            </div>
+            <ul class="ul_nav">
+                <li class="li_nav"><a href="Login.html" class="link_nav">Entrar</a></li>
+                <li class="li_nav"><a href="#perfil" class="link_nav">Perfil</a></li>
+                <li class="li_nav"><a href="#servicios" class="link_nav">Servicios</a></li>
+                <li class="li_nav"><a href="#contacto" class="link_nav">Contacto</a></li>
+                <li class="li_nav"><a href="#preguntas" class="link_nav">Preguntas frecuentes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--CUERPO-->
+    <main id="principal">
+
+        <!--INICIO-->
+        <article id="inicio">
+            <h1>Bienvenido a CyberDEVS</h1>
+            <iframe src="https://player.vimeo.com/video/544220619?h=34df0ab9d6" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            <h2>Te presentamos la mejor manera de proteger tu empresa</h2>
+            <p>
+                Te protegemos contra ciber-amenazas enfocándonos en estándares globales establecidos 
+                por la <a href="https://owasp.org/www-project-top-ten/" target="_blank">OWASP</a> 
+                (Open Web Application Security Project) y <a href="https://www.nist.gov/system/files/documents/2018/12/10/frameworkesmellrev_20181102mn_clean.pdf" target="_blank">NIST</a>
+                (National Institute of Standards and Technology) ofreciendo además servicios de inteligencia para tu empresa.
+            </p>
+            <img class="img2" src="Imagenes/Ciberseguridad.gif" alt="CyberDEVS">
+        </article>
+        
+        <!--PERFIL-->
+        <article id="perfil">
+            <h1>Te hablaremos sobre CyberDEVS...</h1>
+            <p class="p1">
+                CyberDEVS es un concepto que nació en el año 2022 por un grupo de estudiantes de la carrera de ingeniería
+                en sistemas que buscan ofrecer a empresas la seguridad que su organización necesita, a través de auditorías
+                de pentesting siguiendo estándares globales de seguridad, además de ofrecer servicios de inteligencia 
+                en los cuales nosotros nos encargamos de revisar aquellas fugas de información que tu organización 
+                (por medio del personal) pueda tener.
+            </p>
+            <p class="p2">Nuestro proceso de investigación está basado en sistemas utilizados por la CIA:</p>
+            <div class="lista">
+                <p>Implementación de sus firewalls</p>
+                <hr>
+                <p>Análisis de fuga de información</p>
+                <hr>
+                <p>Auditorias de pentesting</p>
+                <hr>
+                <p>Análisis de vulnerabilidades</p>
+                <hr>
+                <p>Análisis de trafico de red</p>
+            </div>
+            <img src="Imagenes/Cybersecurity.jpg" alt="Ciberseguridad">
+            <p class="p3">
+                Dentro de nuestro servicio de pentesting nos encargaremos de dar un reporte ejecutivo detallando las 
+                vulnerabilidades encontradas junto con las pruebas de los análisis con las cuales nosotros te orientaremos 
+                a que de solución a su vulnerabilidad y volver a auditar el lugar donde se genera el incidente.
+            </p>    
+        </article>
+
+        <!--SERVICIOS-->
+        <article id="servicios">
+            <h1>¿Qué servicios ofrecemos?</h1>
+            <h3>Implementación de sus firewalls</h3>
+            <p>
+                <img src="Imagenes/Firewall.gif" alt="Firewall" width="250" height="200">
+                Los firewalls han constituido una primera línea de defensa en seguridad de la red durante más de 25 años.
+                <b>Establecen una barrera entre las redes internas protegidas y controladas en las que se puede confiar y 
+                redes externas que no son de confianza</b>, como Internet. Con esa dinámica, evitará que los usuarios de internet
+                no autorizados puedan ingresar a la red corporativa. De igual modo, restringe a los colaboradores para 
+                que no puedan acceder a servicios externos que no están permitidos.
+            </p>
+            <br>
+            <h3>Analisis de fuga de informacion</h3>
+            <p>
+                <img src="Imagenes/Fuga.gif" alt="Fuga informacion" width="250" height="200">
+                Una fuga de datos <b>es la pérdida de confidencialidad de la información de una organización, 
+                empresa o individuo</b>, mediante la obtención de la misma o el conocimiento del contenido de esta por parte 
+                de personas no autorizadas para ello. A menos que se apliquen diligentemente los controles adecuados, 
+                cabe esperar que la información acabe en las manos de gente no deseada. Incluso implementando controles, 
+                el riesgo de una fuga de información no desaparece.
+            </p>
+            <br>
+            <h3>Auditorias de pentesting</h3>
+            <p>
+                <img src="Imagenes/Auditoria.gif" alt="Auditorias" width="250" height="200">
+                El pentesting o test de penetración <b>consiste en atacar diferentes entornos o sistemas con el objetivo de 
+                detectar y prevenir posibles fallos</b>. Se trata de una técnica para encontrar aquellos errores en el sistema.
+                Es una de las prácticas más demandadas actualmente, ya que gracias a este tipo de exámenes las empresas 
+                pueden poner remedio a sus debilidades antes de que lo hagan los ciberdelincuentes.
+            </p>
+            <br>
+            <h3>Analisis de vulnerabilidades</h3>
+            <p>
+                <img src="Imagenes/Vulnerabilidades.jpg" alt="Vulnerabilidad" width="250" height="200">
+                El análisis de vulnerabilidad <b>consiste en definir, identificar, clasificar y priorizar las debilidades de
+                las aplicaciones</b> para proporcionar una evaluación de las amenazas previsibles y reaccionar de manera 
+                apropiada. Organizaciones que se encuentran en mayor riesgo de sufrir ciber-ataques, sin importar su tamaño,
+                pueden beneficiarse de las evaluaciones de vulnerabilidad para hacer que sus entornos sean más seguros.
+            </p>
+            <br>
+            <h3>Auditorias de trafico de red</h3>
+            <p>
+                <img src="Imagenes/Trafico.gif" alt="Trafico red" width="250" height="200">
+                Es el proceso de evaluación de la seguridad y el rendimiento de una red de computadoras. Durante una 
+                auditoría de red, un auditor <b>evalúa la configuración de la red y los dispositivos de seguridad, así como 
+                el tráfico de red y el uso de recursos</b>. Los resultados de la auditoría de red se pueden utilizar para 
+                mejorar la seguridad y el rendimiento de la red.
+            </p>
+        </article>
+
+        <!--CONTACTO-->
+        <article id="contacto">
+            <h1>¡Contacta con nuestros miembros!</h1>
+            <p class="p_contacto">
+                Actualmente CyberDEVS cuenta con 4 miembros disponibles y totalmente capacitados para cualquier cita, ya sea 
+                virtual (Zoom o Teams) o presencial. Con gusto se le atenderá de la mejor y atenta forma posible.
+            </p>
+            <div class="equipo">
+                <div class="imagen">
+                    <img src="Imagenes/Miguel.jpg" class="foto" alt="Miguel Ayala">
+                    <figcaption class="descripcion">Ing. Miguel Angel Ayala Medrano <br><br> Ingeniero en sistemas especializado en ciberseguridad y soporte técnico.</figcaption>
+                </div>
+                <div class="imagen">
+                    <img src="Imagenes/Junior.jpg" class="foto" alt="Junior Facundo">
+                    <figcaption class="descripcion">Ing. Junior Javier Facundo Saldaña <br><br> Ingeniero en sistemas especializado en redes computacionales y soporte técnico.</figcaption>
+                </div>
+                <div class="imagen">
+                    <img src="Imagenes/Oscar.jpg" class="foto" alt="Oscar Soto">
+                    <figcaption class="descripcion">Ing. Oscar Isaac Soto Zapata <br><br> Ingeniero en sistemas especializado en soporte técnico.</figcaption>
+                </div>
+                <div class="imagen">
+                    <img src="Imagenes/Eder.jpg" class="foto" alt="Eder Soto" >
+                    <figcaption class="descripcion">Ing. Eder Aldair Soto Sifuentes <br><br> Ingeniero en sistemas especializado en desarrollo web frontend.</figcaption>
+                </div> 
+            </div>
+            <h3>Puede contactarse con nosotros mediante los siguientes medios:</h3>
+            <nav class="medios">
+                <a href="https://www.facebook.com/people/Cyberdevs/100090999181800/" target="_blank"><img class="link" src="Imagenes/Facebook.png" alt="Facebook"></a>
+                <a href="mailto:General@cyberdevs.com?Subject=Escriba%20el%20asunto%20que%20desea%20tratar" target="_blank"><img class="link" src="Imagenes/email.png" alt="Email"></a>
+                <a href="https://wa.me/5281124440063?text=Escriba%20el%20asunto%20que%20desea%20tratar" target="_blank"><img class="link" src="Imagenes/whatsapp.png" alt="Whatsapp"></a>
+            </nav>
+        </article>
+
+        <!--PREGUNTAS-->
+        <article id="preguntas">
+            <h1>Preguntas frecuentes hechas por el cliente</h1>
+            <h2>¿Por qué solo son 4 miembros?</h2>
+            <p>
+                CyberDEVS tiene poco tiempo desde su inauguración por lo tanto actualmente solamente se encuentran los 
+                creadores de este proyecto disponibles para dar servicios, sin embargo, se planea integrar a más personas 
+                al proyecto.
+            </p>
+            <h2>¿Por qué debería confiar en recién egresados?</h2>
+            <img src="Imagenes/Equipo.jpg" alt="Miembros" width="740" height="425">
+            <p>
+                A pesar de ser alumnos recién egresados de la universidad tenemos un espíritu indomable el cual queremos 
+                aprovechar para darle la mejor atención al cliente, con nuestra corta experiencia le daremos un servicio de 
+                calidad inmensurable.
+            </p>
+            <h2>¿Cuánto es el costo de sus servicios?</h2>
+            <p>
+                Los costos de nuestros servicios variaran dependiendo del lugar, horario, problema y rapidez. Para una 
+                mayor información contacte con nuestros miembros.
+            </p>
+            <h2>¿Brindan servicio internacional?</h2>
+            <p>
+                Actualmente solamente brindamos servicios presenciales en México, fuera de México nos contactamos de manera 
+                virtual.
+            </p>
+            <h2>¿Cualquier miembro está disponible para viajar a otros estados (México)?</h2>
+            <p>
+                Actualmente todos los miembros de CyberDEVS cuentan con disponibilidad para viajar dentro de la república, 
+                aun así, nunca está de más contactar con ellos y preguntar personalmente.
+            </p>    
+        </article>
+
+    </main>
+
+    <!--PIE PAGINA-->
+    <footer class="pie_pagina">
+        <a class="volver" href="#principal">↑ Volver arriba ↑</a>
+        <br>
+        <p>
+            Si tienes alguna duda sobre nuestra página, te invitamos a leer nuestros:
+        </p>
+        <p>
+            <a href="Terminos.html">Términos y Condiciones</a> | <a href="Politica.html">Política de privacidad</a>
+        </p>
+        <p>
+            © Copyright - CyberDEVS - Versión 1.0
+        </p>
+    </footer>
+</body>
+</html>

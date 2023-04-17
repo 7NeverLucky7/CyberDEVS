@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="logo" href="Imagenes/Radar.png">
+    <link rel="stylesheet" href="CSS/Revisiones.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <title>CyberDEVS - Revisiones</title>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="encabezado">
+        <h1 class="titulo">Panel de control</h1>
+    </header>
+
+    <!-- LINKS -->
+    <div class="menu" x-data="{ open: false}">
+        <button class="boton_cabecera_abierto" x-on:click="open = true" type="button"><img src="Imagenes/Menu.svg" height ="35" width="35"/></button>
+        <nav class="barra_nav" x-bind:class="open ? 'nav--show' : ''">
+            <div class="boton_nav" x-on:click="open = false">
+                <button class="boton_cabecera_cerrado" type="button"><img src="Imagenes/Cerrar.svg" height ="35" width="35"/></button>
+            </div>
+        <nav class="enlaces">
+            <a href="Usuario.html" class="link">Reportes</a>
+            <a href="Comentarios.html" class="link">Comentarios</a>
+            <a href="Revisiones.html" class="link">Proximas Revisiones</a>
+            <a href="CyberDEVS.html" class="link">Cerrar Sesión</a>
+        </nav>
+    </div>
+
+    <!-- CONTENIDO -->
+    <main class="contenedor">
+        <article class="contenido">
+            <section class="informe">
+                <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FMonterrey&src=ZWRlcnRha2VyMjAwOUBnbWFpbC5jb20&src=ZXMubWV4aWNhbiNob2xpZGF5QGdyb3VwLnYuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%237986CB&color=%230B8043" style="border-width:0" frameborder="0" scrolling="no"></iframe>
+            </section>
+        </article>
+    </main>
+
+    <!--PIE PAGINA-->
+    <footer class="footer">
+        <p>© Copyright - CyberDEVS - Versión 1.0</p>
+    </footer>
+</body>
+</html>
